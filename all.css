@@ -1,0 +1,15 @@
+
+.logo{
+  width: 120px;
+  height: 24px;
+}
+.header-carousel-item{
+  height: 450px;
+}
+.bg-cover{
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-caption{
+  background-color: rgba(0, 0, 0, 0.445);
+}
