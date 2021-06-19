@@ -47,8 +47,8 @@
             </li>
           </ul>
           <form class="d-flex">
-            <div class="btn btn-outline-warning me-2 border-2">登入</div>
-            <div class="btn btn-warning">註冊</div>
+            <div class="btn btn-outline-warning me-2 border-2" data-bs-toggle="modal" data-bs-target="#loginModal">登入</div>
+            <div class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#registerModal">註冊</div>
           </form>
         </div>
       </div>
@@ -324,22 +324,85 @@
       </div>
     </footer>
 
+    <!-- Modal 登入 -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title" id="ModalLabel">登入</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row mb-3">
+                <label for="inputEmail" class="col-sm-2 col-form-label">信箱</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputPassword" class="col-sm-2 col-form-label">密碼</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a href="#" data-bs-dismiss="modal" class="me-auto linkModal" data-bs-toggle="modal" data-bs-target="#registerModal">切換到註冊</a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">離開</button>
+            <button type="button" class="btn btn-warning">登入</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 註冊 -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title" id="ModalLabel">註冊</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>歐美新年成績家電至於夫人，上路經過頻率壓縮經營許可證重量高校傳真招標，主任聯繫電話，那時引發嚴重查看態度裝修，推薦使用還會簡體讓你，整合也會把它原來狀態上一頁標準，壓縮要是有效實力這裡影音大賽因為達到另一個改革小七課程，分類抓住夫人，商城天氣檢驗消失全面標籤，頻率家長去年貨幣加速證據眼神直播主那樣分析頻率，連載多少，比較對付那樣鏡頭只見新技術實用付款投資者素質哪個，高雄教授而已然而收益消除僅僅專用普通，認證幫忙會有，原理我要陽明山各類建議，說是基地當年是啊性感會議一個，分鐘最好的而言，不夠顏色搜尋一週溫度生產關西，學校依然啟動記者網際主動這就是，完美魯蛇一句以後靈魂，房屋一條確認本頁寫出來接收觀念大廈本論壇你可以學會，成為免費神經青年集體學校，以及想起瀏覽次數作業保留形成一部大師相對對他，相機存款注重足球經過一年，開通篇文章資料講話監控思路最終宣佈不可大學生收藏生意，一名另外早就文件故事接近做到轎車滿足高中為此情緒填寫，經營許可證最大思考德國和他權力調整緊急化學歡迎光臨，依然都市總數創意，帶來成績，則是事項規格高級是否至少主機老大，只不過特別老闆一部分財產，體內無論協議簡單，床上普遍。</p>
+            <form>
+              <div class="row mb-3">
+                <label for="inputName" class="col-sm-2 col-form-label">姓名</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputName" placeholder="Name">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputEmail2" class="col-sm-2 col-form-label">信箱</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail2" placeholder="Email">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputPassword2" class="col-sm-2 col-form-label">密碼</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a href="#" data-bs-dismiss="modal" class="me-auto linkModal" data-bs-toggle="modal" data-bs-target="#loginModal">切換到登入</a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">離開</button>
+            <button type="button" class="btn btn-warning">送出</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-    <script>
-      let forms = document.querySelectorAll('.needs-validation');
-      Array.prototype.slice.call(forms)
-        .forEach(function (form) {
-          form.addEventListener('submit', function (event) {
-            if (!form.checkValidity()) {
-              event.preventDefault()
-              event.stopPropagation()
-            }
-            form.classList.add('was-validated')
-          }, false)
-        })
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script> -->
+    <script src="./all.js"></script>
+
+
   </body>
 </html>
