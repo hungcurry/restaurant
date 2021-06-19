@@ -1,4 +1,8 @@
 
+*{
+  /* outline: 1px solid red; */
+}
+
 .logo{
   width: 120px;
   height: 24px;
@@ -12,4 +16,33 @@
 }
 .carousel-caption{
   background-color: rgba(0, 0, 0, 0.445);
+}
+.z-index-1{
+  z-index: 1;
+}
+.z-index-2{
+  z-index: 2;
+}
+@media screen and (min-width:768px){
+  .text-md-dark{
+    color: #333 !important;
+  }
+}
+.icon-story{
+  width: 80px;
+}
+@media screen and (max-width:768px){
+  .bg-sm-dark{
+    background-color: rgba(0, 0, 0, 0.699);
+  }  
+}
+@media screen and (min-width:992px){
+  .btn-outline-lg-success{
+    color: #198754;
+    border-color: #198754;
+  } 
+}
+.form-check-input:checked {
+  background-color: #198754;
+  border-color: #198754;
 }
